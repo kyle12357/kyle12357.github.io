@@ -4,18 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speech Recognition Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light Blue Background */
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        #username {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 250px;
+        }
+
+        #start-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #start-btn:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #555;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .icon {
+            font-size: 1.5em;
+            margin-right: 5px;
+        }
+
+        .symbol {
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
+    <h1><span class="symbol">🎤</span> Speech Recognition Example</h1>
     <div>
         <label for="username">Enter your username:</label>
         <input type="text" id="username" placeholder="Username">
     </div>
-    <button id="start-btn">Start Listening</button>
+    <button id="start-btn">
+        <span class="icon">🎙️</span> Start Listening
+    </button>
     <div id="result"></div>
 
     <script src="server.js"></script>
 </body>
 </html>
-
-
-
